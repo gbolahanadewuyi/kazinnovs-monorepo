@@ -1,0 +1,357 @@
+.profile-pic {
+  width: 100%;
+  height: 80%;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.team-category-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f5a425;
+  border-bottom: 2px solid #f5a425;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 30px;
+}
+
+.section.events .item ul li a {
+  color: #f5a425;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section.events .item ul li a:hover {
+  text-decoration: underline;
+}
+
+.events .item ul li h6 {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  color: #4a4a4a;
+}
+
+.events .item ul li {
+  vertical-align: top;
+}
+
+/* Capability cards — team section */
+.capability-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 28px 28px;
+  height: 100%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.capability-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.13);
+}
+
+.capability-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: #f5a425;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.capability-icon i {
+  font-size: 22px;
+  color: #fff;
+}
+
+.capability-card h5 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1d2130;
+  margin-bottom: 10px;
+}
+
+.capability-card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.capability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.capability-tags span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #f5a425;
+  background: rgba(245, 164, 37, 0.1);
+  border: 1px solid rgba(245, 164, 37, 0.3);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+/* =============================================
+   Brand colour overrides — dark navy + orange
+   ============================================= */
+
+/* Fix testimonials overlapping last team card on mobile */
+@media (max-width: 767px) {
+  .testimonials {
+    margin-top: 40px !important;
+  }
+
+  /* Match template's mobile repositioning of project arrow buttons */
+  .events-btn-disabled {
+    bottom: 150px;
+    top: auto;
+  }
+}
+
+/* Vision / Mission / Values icon circles */
+.services .service-item .icon {
+  background-color: #f5a425 !important;
+}
+
+/* Footer */
+footer {
+  background-color: #0D1F3C !important;
+}
+
+/* Hero banner */
+.main-banner {
+  background-color: #0D1F3C !important;
+}
+
+/* Sticky nav on scroll */
+.background-header {
+  background-color: #0D1F3C !important;
+}
+
+/* Fun facts band */
+.fun-facts:before {
+  background-color: #0D1F3C !important;
+}
+
+/* Accordion panel */
+.accordion {
+  background-color: #0D1F3C !important;
+}
+
+/* Accordion expand/collapse toggle */
+.accordion-button::after {
+  background-color: #f5a425 !important;
+}
+
+/* Accordion open-state text */
+.accordion-button:not(.collapsed) {
+  color: #f5a425 !important;
+}
+
+/* All main CTA buttons → solid orange */
+.main-button a {
+  background-color: #f5a425 !important;
+  color: #fff !important;
+  border: none;
+}
+
+.main-button a:hover {
+  background-color: #0D1F3C !important;
+  color: #fff !important;
+}
+
+/* Project card arrow buttons */
+.events .item a {
+  background-color: #f5a425 !important;
+}
+
+/* Contact form submit button */
+.orange-button {
+  display: inline-block;
+  background-color: #f5a425;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.orange-button:hover {
+  background-color: #0D1F3C;
+  color: #fff;
+}
+
+.orange-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Disabled state for project arrow buttons */
+.events-btn-disabled {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  background-color: #ccc;
+  width: 60px;
+  height: 120px;
+  display: inline-block;
+  text-align: center;
+  line-height: 120px;
+  font-size: 18px;
+  z-index: 1;
+  color: #fff;
+  border-radius: 60px 0px 0px 60px;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Testimonials card */
+.testimonials .item {
+  background-color: #0D1F3C !important;
+}
+
+/* Contact form panel */
+.contact-us .contact-us-content {
+  background-color: #0D1F3C !important;
+}
+
+/* Contact section heading override (centered, no right margin) */
+.contact-heading {
+  margin-right: 0 !important;
+  margin-bottom: 40px !important;
+}
+
+.contact-heading p {
+  margin-top: 16px !important;
+  color: #6b7280;
+}
+
+/* Contact channel cards */
+.contact-channels {
+  justify-content: center;
+}
+
+.contact-channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 28px 32px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.contact-channel:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  color: inherit;
+  opacity: 1;
+}
+
+.channel-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(245, 164, 37, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.channel-icon i {
+  font-size: 26px;
+  color: #f5a425;
+}
+
+.contact-channel h5 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1d2130;
+  margin-bottom: 6px;
+}
+
+.contact-channel p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.contact-channel span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f5a425;
+  word-break: break-word;
+}
+
+/* Location line */
+.contact-location {
+  margin-top: 32px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.contact-location i {
+  color: #f5a425;
+  margin-right: 6px;
+}
+
+/* Override the old :before blue half-background to full-width */
+.contact-us:before {
+  width: 100% !important;
+  border-radius: 0 !important;
+  background-color: #f8fbff !important;
+}
+
+/* Contact special-offer accent elements */
+.contact-us .special-offer span.offer {
+  background-color: #f5a425 !important;
+}
+
+.contact-us .special-offer h6 em,
+.contact-us .special-offer h4 em {
+  color: #f5a425 !important;
+}
+
+.contact-us .special-offer a {
+  background-color: #f5a425 !important;
+}
+
+/* Nav active pill on dark header */
+.header-area .main-nav .nav li a.active,
+.header-area.header-sticky .nav li a.active {
+  background-color: #f5a425 !important;
+  color: #fff !important;
+  border-radius: 20px;
+  opacity: 1 !important;
+}
+

@@ -1,0 +1,12 @@
+dispatch:
+  - url: "www.kazinnovs.com/*"
+    service: default
+
+  - url: "kazinnovs.com/*"
+    service: default
+
+  - url: "portfolio.kazinnovs.com/*"
+    service: gbolahan-portfolio
+
+  - url: "gbolahan.com/*"
+    service: gbolahan-portfolio

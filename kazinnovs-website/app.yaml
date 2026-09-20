@@ -1,0 +1,21 @@
+runtime: python312
+
+handlers:
+  - url: /(.+\.(webp|png|jpg|jpeg|gif|svg|css|js|woff|woff2|ttf|map))
+    static_files: public/\1
+    upload: public/.*\.(webp|png|jpg|jpeg|gif|svg|css|js|woff|woff2|ttf|map)$
+    secure: always
+    http_headers:
+      Cache-Control: "public, max-age=31536000, immutable"
+
+  - url: /(.+)
+    static_files: public/\1
+    upload: public/(.*)
+    secure: always
+
+  - url: /
+    static_files: public/index.html
+    upload: public/index.html
+    secure: always
+    http_headers:
+      Cache-Control: "public, max-age=300"
