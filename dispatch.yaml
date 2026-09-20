@@ -1,12 +1,12 @@
 dispatch:
-  - url: "www.kazinnovs.com/*"
+  - url: "www.kazinnovsltd.xyz/*"
     service: default
 
-  - url: "kazinnovs.com/*"
+  - url: "kazinnovsltd.xyz/*"
     service: default
 
-  - url: "portfolio.kazinnovs.com/*"
+  - url: "www.gbolahanadewuyi.xyz/*"
     service: gbolahan-portfolio
 
-  - url: "gbolahan.com/*"
+  - url: "gbolahanadewuyi.xyz/*"
     service: gbolahan-portfolio
